@@ -5,7 +5,7 @@ import { Product, } from '../types/productTypes';
 export const productsApi = createApi({
     reducerPath: 'productsApi',
     // baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5500/api/products' }),
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://product-new-server.vercel.app/api/products' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://product-new-server.vercel.app/api/products', credentials: "include" }),
     tagTypes: ['Product'],
     endpoints: (builder) => ({
 
